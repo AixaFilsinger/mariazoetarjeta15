@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body{
+ background-color: #282626;
+  
+}
+h1{
+    color: #FFC3D9;
+}
+h3{
+    color: #ffdbe9;
+}
+.portada{
+    background: url(./assets/fondo.png) no-repeat;
+    background-size: contain;
+    position: relative;
+  overflow: hidden;
+  text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.portada h1{
+   font-family: "Style Script", cursive;
+  font-size: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+.linea {
+    margin-top:2rem;
+  position: relative;
+  display: inline-block; /* para que el contenedor se ajuste al contenido */
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.linea img {
+  display: block;
+  width: 130px;
+}
+
+.linea h2 {
+  font-size: 2.5rem;
+  position: absolute;
+  color: white;
+ font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.linea .mis {
+  top: 32px;
+  left: -63px;
+}
+
+.linea .años {
+  bottom: 28px;
+  right: -120px;
+}
+.enfoque span {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: aparecer 0.5s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
