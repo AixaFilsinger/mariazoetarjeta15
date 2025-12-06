@@ -37,7 +37,7 @@ h3{
 }
 .portada h1{
    font-family: "Style Script", cursive;
-  font-size: 2rem;
+  font-size: 5rem;
   margin-top: 10rem;
   margin-bottom: 2rem;
   position: relative;
@@ -58,7 +58,7 @@ h3{
 }
 
 .linea h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   position: absolute;
   color: white;
  font-family: "Lato", sans-serif;
