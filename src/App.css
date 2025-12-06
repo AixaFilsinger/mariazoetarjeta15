@@ -20,9 +20,7 @@ body{
  background-color: #282626;
   
 }
-h1{
-    color: #FFC3D9;
-}
+
 h3{
     color: #ffdbe9;
 }
@@ -37,6 +35,7 @@ h3{
 }
 .portada h1{
    font-family: "Style Script", cursive;
+   color: #FFC3D9;
   font-size: 4rem;
   margin-top: 10rem;
   margin-bottom: 2rem;
@@ -86,4 +85,111 @@ h3{
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* ======================================= */
+/* 6. ESTILOS DEL REPRODUCTOR SIMPLE       */
+/* ======================================= */
+
+/* Variables para facilitar el cambio de color */
+:root {
+    --color-fondo-player: #282626; 
+    --color-principal-player: #FFC3D9; 
+    --base-font-size-player: 1.1rem; 
+}
+
+.reproductor-bg {
+    background-color: var(--color-fondo-player) !important;
+    border-radius: 10px;
+    max-width: 95%; /* Asegura que no se desborde */
+    margin: 20px auto;
+    padding: 1rem 1rem !important; /* Padding ajustado para móvil */
+}
+
+/* Botones de control (Anterior, Siguiente, Shuffle, Repetir) */
+.control-btn {
+    color: var(--color-principal-player) !important;
+    font-size: var(--base-font-size-player); 
+    padding: 0;
+    margin: 0 5px;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important; 
+}
+
+/* Botón central de Play/Pause (el círculo grande) */
+.play-pause-btn {
+    width: 45px; /* Tamaño más pequeño para móvil */
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-principal-player) !important;
+    color: var(--color-fondo-player) !important; 
+    font-size: 1.2rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Estilo del ícono dentro del botón de Play/Pause */
+.play-pause-btn .play-icon {
+    margin-left: 2px;
+}
+
+/* Barra de Progreso */
+.progress-bar-placeholder {
+    height: 5px; 
+    background-color: rgba(255, 195, 217, 0.3); 
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress-slider {
+    width: 30%; 
+    height: 100%;
+    background-color: var(--color-principal-player);
+    border-radius: 3px;
+    position: relative;
+}
+
+/* El círculo/punto en la barra */
+.progress-slider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-principal-player);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query para pantallas muy pequeñas (ajuste fino) */
+@media (max-width: 576px) {
+    
+    .reproductor-bg {
+        padding: 0.5rem 0.5rem !important;
+    }
+    
+    .control-btn {
+        font-size: 1rem; 
+        margin: 0 2px; 
+    }
+
+    .play-pause-btn {
+        width: 40px; 
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+.repro{
+    margin-top: 5rem;
+}
+.repro h3{
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
 }

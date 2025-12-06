@@ -1,4 +1,7 @@
 import quince from '../assets/15.png'
+import ReproductorMusic from './ReproductorMusic';
+
+
 const Portada = () => {
     return (
         <section className="portada img-fluid">
@@ -34,8 +37,8 @@ const Portada = () => {
           ))}
         </h2>
       </aside>
-
-     
+      
+     <ReproductorMusic></ReproductorMusic>
         </section>
     );
 };
