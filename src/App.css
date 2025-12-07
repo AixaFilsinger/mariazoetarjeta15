@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Style+Script&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -21,16 +23,14 @@ body{
   
 }
 
-h3{
-    color: #ffdbe9;
-}
+
 .portada{
     background: url(./assets/fondo.png) no-repeat;
     background-size: contain;
     position: relative;
   overflow: hidden;
   text-align: center;
-    height: 100%;
+    min-height: 80vh;
     width: 100%;
 }
 .portada h1{
@@ -41,6 +41,9 @@ h3{
   margin-bottom: 2rem;
   position: relative;
   z-index: 2;
+}
+.dres{
+  color: #FFC3D9;
 }
 .linea {
     margin-top:1rem;
@@ -187,9 +190,343 @@ h3{
 }
 
 .repro{
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    
 }
 .repro h3{
     font-size: 1rem;
     font-family:'Times New Roman', Times, serif;
+}
+
+.frase{
+  background: url("/src/assets/frase1.jpg") no-repeat;
+  background-size: contain;
+  min-height: 40vh;
+  
+  
+}
+
+.frase p{
+  font-family: "Prata", serif;
+  color: white;
+  margin: 0;
+}
+.cuenta{
+  min-height: 70vh;
+}
+.lineaC{
+  position: relative;
+  margin-bottom: 5rem;
+}
+ .lineaC .viernes {
+    position: absolute; /* ¡Añade esto! */
+    top: 70px;
+    left: 70px;
+}
+
+.lineaC .año {
+    position: absolute; /* ¡Añade esto! */
+    bottom: -13px;
+    right: 70px;
+}
+.lineaC h3{
+  color: white;
+   font-family: "Italianno", cursive;
+   font-size: 2.5rem;
+   margin: 0;
+}
+.cuentaRegre{
+  background: url("/src/assets/cuentaR.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.cuentaRe{
+margin-bottom: 4rem;
+  text-align: center;        /* centra texto dentro del bloque */
+ 
+}
+
+.h2-cuentaRe{
+  font-family: "Style Script", cursive;
+  color: #fca8c7;
+  font-size: 2rem;
+  padding-bottom: 0.3rem;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contador h3{
+  font-size: 3rem;
+   font-family: "Prata", serif;
+   line-height: 1;
+   margin: 0;
+   
+}
+.contador small{
+  font-family:'Courier New', Courier, monospace;
+   
+}
+
+/*VARIOSSSSS*/
+
+.varios{
+ background: url("/src/assets/varios.jpg");
+ background-size: contain;
+ 
+
+}
+.varios h4{
+ font-family: "Italianno", cursive;
+ color: #FFC3D9;
+ margin-top: 10px;
+ font-size: 4rem;
+}
+.varios p{
+  color: white;
+font-family: "Prata", serif;
+  font-size: 1.5rem;
+  margin:20px 30px;
+}
+
+.btn-varios {
+   background: linear-gradient(
+    45deg,
+    #F5F5F5 0%,   /* Blanco/Gris muy claro para el brillo */
+    #BDBDBD 35%,  /* Gris medio */
+    #696969 50%,  /* Gris oscuro para contraste */
+    #BDBDBD 65%,  /* Gris medio */
+    #F5F5F5 100%  /* Blanco/Gris muy claro para el brillo */
+  );
+
+  /* Fallback */
+  background-color: #C0C0C0;
+  color:#f92f79;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+ 
+  
+  /* Borde sutil */
+  border: 1px solid #AAAAAA;
+  
+  /* Sombra sutil para levantar el botón */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-varios3{
+ background-color: black;
+ color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-varios:hover {
+   background-color: black;
+ color: white;
+}
+
+
+.qr{
+  font-family: 'Cormorant Garamond', serif;
+ color: black;
+ margin-top: 10px;
+ font-size: 1.8rem;
+}
+.fin h4{
+ font-family: "Italianno", cursive;
+ color: white;
+ font-size: 40px;
+ margin-bottom: 80px;
+}
+.fin h2{
+  font-family: "Style Script", cursive;
+  color: white;
+  font-weight: 300;
+  font-size: 60px;
+  margin: 0;
+}
+
+@keyframes enfoque-letra {
+  0% {
+    filter: blur(8px);
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.enfoque span {
+  display: inline-block;
+  opacity: 0;
+  animation: enfoque-letra 0.6s ease forwards;
+}
+
+.modal-custom {
+  color: black;             /* texto oscuro */
+  font-family: 'Nunito', sans-serif;
+}
+.modal-custom p {
+  font-family:'Nunito', sans-serif ;
+  color: black;             /* asegura que los párrafos se vean */
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+.btn-varios2 {
+  background: black;
+  color: #fff;
+  border: 2px solid rgb(168, 168, 168);
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+}
+
+.fin{
+  height: 90vh;
+}
+
+
+
+/* Estilo base del brillo */
+.brillo {
+  position: absolute;
+  width: 120px;  /* ajusta según quieras */
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
+.brillo1 {
+  position: absolute;
+  width: 50px;  /* ajusta según quieras */
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
+.brilloC {
+  position: absolute;
+  width: 50px;  /* ajusta según quieras */
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Ubicación del brillo */
+.brillo-top {
+  top: -40px;
+  left: -5px;
+}
+
+.brillo-bottom {
+  bottom: -40px;
+  right: 5px;
+  animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
+}
+.brillo-top1 {
+  top: 30px;
+  left: -100px;
+}
+
+.brillo-bottom1 {
+  bottom: 30px;
+  right: -100px;
+  animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
+}
+
+/* Animación flotante */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+.fin {
+  height: 100vh;
+  position: relative;
+  background: url(./assets/fin.jpg);
+  background-size: contain;
+ 
+  overflow: hidden; /* para que el overlay no se escape */
+}
+
+.fin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* negro semitransparente */
+  z-index: 0;
+}
+
+.fin h2,
+.fin h4,
+.fin img {
+  position: relative;
+  z-index: 1; /* para que queden arriba del overlay */
+  color: white; /* letras blancas si querés contraste */
+}
+
+/* 🔹 Contenedor de los círculos */
+.color-palette {
+  display: flex;
+  justify-content: center;
+}
+
+/* 🔹 Círculos base */
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #C0C0C0;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* 🔹 Colores específicos */
+.color-circle.plateado {
+ background: linear-gradient(
+    45deg,
+    #F5F5F5 0%,   /* Blanco/Gris muy claro para el brillo */
+    #BDBDBD 35%,  /* Gris medio */
+    #696969 50%,  /* Gris oscuro para contraste */
+    #BDBDBD 65%,  /* Gris medio */
+    #F5F5F5 100%  /* Blanco/Gris muy claro para el brillo */
+  );
+
+  /* Fallback */
+  background-color: #C0C0C0;
+}
+.color-circle.celeste{
+ 
+  background-color:white;
+}
+.color-circle.azul {
+ 
+  background-color:rgb(64, 88, 227);
 }
