@@ -136,7 +136,7 @@ const Varios = () => {
           </p>
           <button
             className="btn-varios mt-3 mb-1"
-            onClick={() => window.open("hhttps://wa.link/ks47h0")}
+            onClick={() => window.open("https://wa.link/ks47h0")}
           >
             Maria Zoe
           </button>
