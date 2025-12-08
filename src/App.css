@@ -30,7 +30,7 @@ body{
     position: relative;
   overflow: hidden;
   text-align: center;
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
 }
 .portada h1{
@@ -104,7 +104,7 @@ body{
 .reproductor-bg {
     background-color: var(--color-fondo-player) !important;
     border-radius: 10px;
-    max-width: 80%; /* Asegura que no se desborde */
+    max-width: 95%; /* Asegura que no se desborde */
     margin: 20px auto;
     padding: 1rem 1rem !important; /* Padding ajustado para móvil */
 }
@@ -249,7 +249,7 @@ body{
 }
 
 .cuentaRe{
-margin-bottom: 1rem;
+margin-bottom: 1.5rem;
   text-align: center;        /* centra texto dentro del bloque */
  
 }
@@ -259,7 +259,7 @@ margin-bottom: 1rem;
   color: #fca8c7;
   font-size: 2rem;
   padding-bottom: 0.3rem;
-   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .contador h3{
@@ -441,7 +441,7 @@ font-family: "Prata", serif;
 }
 
 .brillo-bottom {
-  bottom: -40px;
+  bottom: -70px;
   right: 15px;
   animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
 }
