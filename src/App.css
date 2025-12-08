@@ -104,7 +104,7 @@ body{
 .reproductor-bg {
     background-color: var(--color-fondo-player) !important;
     border-radius: 10px;
-    max-width: 95%; /* Asegura que no se desborde */
+    max-width: 80%; /* Asegura que no se desborde */
     margin: 20px auto;
     padding: 1rem 1rem !important; /* Padding ajustado para móvil */
 }
