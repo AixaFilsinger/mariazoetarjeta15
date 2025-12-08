@@ -30,7 +30,7 @@ body{
     position: relative;
   overflow: hidden;
   text-align: center;
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
 }
 .portada h1{
@@ -259,7 +259,7 @@ margin-bottom: 1.5rem;
   color: #fca8c7;
   font-size: 2rem;
   padding-bottom: 0.3rem;
-   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+   
 }
 
 .contador h3{
