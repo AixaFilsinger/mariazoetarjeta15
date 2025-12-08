@@ -7,6 +7,7 @@ import asistencia from "../assets/invitacionB.png";
 import regalo from "../assets/regaloB.png";
 import brillo from "../assets/brillos.png";
 import disco from "../assets/boladisco1.png"
+import copas from "../assets/fiestaB.png"
 
 import { useState } from "react";
 import { BiColor } from "react-icons/bi";
@@ -36,8 +37,7 @@ const Varios = () => {
             data-aos-easing="ease-in-sine"
           >
             16 de Enero <br />
-            21:30 hs<br/>
-            Entrada de la quinciañera 22:30hs
+            21:30 hs
           </p>
         </aside>
         <aside className="col-xs-12 text-center donde mb-4 position-relative">
@@ -62,12 +62,12 @@ const Varios = () => {
               window.open("https://maps.app.goo.gl/T1kNijP1hGqWWqWz7")
             }
           >
-            CÓMO LLEGAR
+            ver ubicación
           </button>
           
         </aside>
         <aside className="col-xs-12 text-center dressCode mb-4">
-          <img src={dressCode} alt="" width={100} />
+          <img src={dressCode} alt="" width={150} />
           <h4
             data-aos="fade-right"
             data-aos-offset="300"
@@ -101,7 +101,7 @@ const Varios = () => {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            ¡Creemos la playlist de la noche juntos!
+            ¿Qué canción no puede faltar?
           </p>
           <button
             className="btn-varios mt-3 mb-5"
@@ -111,8 +111,19 @@ const Varios = () => {
               )
             }
           >
-            Sugerir canción
+            Elegí tu tema
           </button>
+        </aside>
+        <aside className="col-xs-12 text-center asistencia mb-4">
+          <img src={copas} alt="" width={200} />
+          <p
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+           <span className="dres">Recepción </span><br/>21:30hs <br/>
+           <span className="dres">Entrada de la quinciañera</span><br/> 22:30hs
+          </p>
         </aside>
         <aside className="col-xs-12 text-center asistencia mb-4">
           <img src={asistencia} alt="" width={100} />
@@ -121,7 +132,7 @@ const Varios = () => {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            Para confirmar asistencia podes enviar un mensaje a:
+            Para confirmar <span className="dres">asistencia</span> podes enviar un mensaje a:
           </p>
           <button
             className="btn-varios mt-3 mb-1"
@@ -129,7 +140,7 @@ const Varios = () => {
           >
             Maria Zoe
           </button>
-          <p>Podes hacerlo hasta el 03/01</p>
+          <p className="fs-6 text-decoration-underline">Podes hacerlo hasta el 03/01</p>
         </aside>
         <aside className="col-xs-12 text-center regalo mb-5">
           <img src={regalo} alt="" width={100} />
@@ -201,11 +212,11 @@ const Varios = () => {
     </section>
     </article>
       <article
-        className=" fin d-flex flex-column justify-content-center align-items-center position-relative"
+        className=" fin d-flex flex-column justify-content-center align-items-center position-relative text-center"
        
       >
         <img src={brillo} alt="" className="brillo brillo-top1" />
-        <h4  data-aos="zoom-in-down">¡No podes faltar!</h4>
+        <h4  data-aos="zoom-in-down">¡Espero que puedas compartir conmigo este día tan especial!</h4>
         <h2  data-aos="zoom-in-down">Maria Zoe</h2>
         <img src={brillo} alt="" className="brillo brillo-bottom1" />
       </article>

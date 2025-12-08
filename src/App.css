@@ -30,7 +30,7 @@ body{
     position: relative;
   overflow: hidden;
   text-align: center;
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
 }
 .portada h1{
@@ -104,7 +104,7 @@ body{
 .reproductor-bg {
     background-color: var(--color-fondo-player) !important;
     border-radius: 10px;
-    max-width: 95%; /* Asegura que no se desborde */
+    max-width: 80%; /* Asegura que no se desborde */
     margin: 20px auto;
     padding: 1rem 1rem !important; /* Padding ajustado para móvil */
 }
@@ -190,13 +190,14 @@ body{
 }
 
 .repro{
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     
 }
 .repro h3{
     font-size: 1rem;
     font-family:'Times New Roman', Times, serif;
+    color: #FFC3D9;
 }
 
 .frase{
@@ -222,13 +223,13 @@ body{
  .lineaC .viernes {
     position: absolute; /* ¡Añade esto! */
     top: 70px;
-    left: 70px;
+    left: 50px;
 }
 
 .lineaC .año {
     position: absolute; /* ¡Añade esto! */
     bottom: -13px;
-    right: 70px;
+    right: 50px;
 }
 .lineaC h3{
   color: white;
@@ -248,7 +249,7 @@ body{
 }
 
 .cuentaRe{
-margin-bottom: 4rem;
+margin-bottom: 1rem;
   text-align: center;        /* centra texto dentro del bloque */
  
 }
@@ -262,7 +263,7 @@ margin-bottom: 4rem;
 }
 
 .contador h3{
-  font-size: 3rem;
+  font-size: 2.5rem;
    font-family: "Prata", serif;
    line-height: 1;
    margin: 0;
@@ -306,7 +307,7 @@ font-family: "Prata", serif;
 
   /* Fallback */
   background-color: #C0C0C0;
-  color:#f92f79;
+  color:black;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
  
   
@@ -339,7 +340,7 @@ font-family: "Prata", serif;
 }
 
 .btn-varios:hover {
-   background-color: black;
+   background: black;
  color: white;
 }
 
@@ -385,11 +386,11 @@ font-family: "Prata", serif;
 
 .modal-custom {
   color: black;             /* texto oscuro */
-  font-family: 'Nunito', sans-serif;
+  font-family:'Courier New', Courier, monospace;
 }
 .modal-custom p {
-  font-family:'Nunito', sans-serif ;
-  color: black;             /* asegura que los párrafos se vean */
+  font-family:'Courier New', Courier, monospace;
+  color: #f482ac;             /* asegura que los párrafos se vean */
   font-size: 1.5rem;
   margin: 8px 0;
 }
@@ -436,21 +437,21 @@ font-family: "Prata", serif;
 /* Ubicación del brillo */
 .brillo-top {
   top: -40px;
-  left: -5px;
+  left: 10px;
 }
 
 .brillo-bottom {
   bottom: -40px;
-  right: 5px;
+  right: 15px;
   animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
 }
 .brillo-top1 {
-  top: 30px;
+  top: 10px;
   left: -100px;
 }
 
 .brillo-bottom1 {
-  bottom: 30px;
+  bottom: 20px;
   right: -100px;
   animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
 }
